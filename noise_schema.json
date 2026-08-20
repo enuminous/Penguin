@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PENGUIN Noise Ceiling Record",
+  "type": "object",
+  "required": [
+    "machine_version",
+    "timestamp",
+    "system_id",
+    "noise_score"
+  ],
+  "properties": {
+    "machine_version": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "system_id": {
+      "type": "string"
+    },
+    "noise_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "snr_proxy": {
+      "type": "number"
+    },
+    "gradient_instability": {
+      "type": "number"
+    },
+    "entropy_proxy": {
+      "type": "number"
+    },
+    "scale_drift": {
+      "type": "number"
+    }
+  }
+}
